@@ -20,7 +20,7 @@ int main()
 	std::cin >> opr;
 
 
-	switch (opr)
+	switch (opr) 
 	{
 	case '+' :
 
