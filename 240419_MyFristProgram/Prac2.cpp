@@ -7,7 +7,7 @@ int main()
 	std::cout << "나이를 입력하세요\n";
 	std::cin >> age;
 
-	if (7 > age >= 1)
+	if (7 >= age >= 1)
 	{
 		std::cout << "유아";
 	}
