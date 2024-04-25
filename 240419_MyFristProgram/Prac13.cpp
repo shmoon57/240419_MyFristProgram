@@ -1,4 +1,6 @@
 // 실습 2 다차원 배열 
+// 다차원 배열 만들기 
+// 나이 입력시 이름 , 국어점수 출력
 
 #include <iostream>
 #define ROW_SIZE = 5;
@@ -10,7 +12,7 @@ int main()
 {
 	// 데이터 정의
 	string name;
-	int InputAge;
+	string InputAge;
 	string info[5][4] =
 	{
 		{"이름","나이","국어","수학"},
@@ -31,11 +33,11 @@ int main()
 
 	int type = 0;
 
-	if (InputAge == 19)
+	if (InputAge == "19")
 	{
 		type = 1;
 	}
-	else if (InputAge == 20)
+	else if (InputAge == "20")
 	{
 		type = 2;
 	}
@@ -48,16 +50,39 @@ int main()
 		cout << "해당 나이가 없습니다.";
 		break;
 
-	case 1:
-	{
-		cout << info[2, 1] << " : 국어 점수 : " << info[2, 3] << endl;
-		cout << info[4, 1] << " : 국어 점수 : " << info[4, 3] << endl;
-	}
+	case 1: // 나이가 19살
+	
+		for (int i = 0; i < 5; i++)
+		{
+			for(int j= 0; j < 4; j++)
+			{
+				if (j == 1)
+				{
+					if (info[i][j] == InputAge)
+					{
+						cout << info[i][0] << " " << info[i][3] << endl;
+					}
+				}
+			}
+		}
+		break;
+	
 
-	case 2:
-	{
-		cout << info[3, 1] << " : 국어 점수 : " << info[3, 3] << endl;
-		cout << info[5, 1] << " : 국어 점수 : " << info[5, 3] << endl;
-	}
+	case 2: // 나이가 20살
+	
+		for (int i = 0; i < 5; i++)
+		{
+			for (int j = 0; j < 4; j++)
+			{
+				if (j == 1)
+				{
+					if (info[i][j] == InputAge)
+					{
+						cout << info[i][0] << " " << info[i][3] << endl;
+					}
+				}
+			}
+		}
+		break;
 	}
 }
