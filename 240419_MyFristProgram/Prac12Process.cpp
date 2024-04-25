@@ -23,6 +23,8 @@ int main()
 		cout << endl << "ÀÔ·Â: ";
 		cin >> input;
 
+		
+
 		if (input == "exit")
 		{
 			break;
