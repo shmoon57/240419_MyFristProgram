@@ -15,9 +15,6 @@ void reverse(int * array)
 	}
 }
 
-/*
-*/
-
 
 int main()
 {
