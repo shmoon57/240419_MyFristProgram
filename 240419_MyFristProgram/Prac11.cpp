@@ -10,7 +10,6 @@ int add(int num1,int num2)
 }
 
 int sub(int num1, int num2)
-
 {
 	return num1 >= num2 ? (num1 - num2) : (num2 - num1); // 삼항 연산자 사용
 }

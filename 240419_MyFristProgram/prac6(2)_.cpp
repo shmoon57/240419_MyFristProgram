@@ -5,7 +5,7 @@ int main()
 {
 	int i;
 	int j;
-	std::cout << " 1~9 단출력\n";
+	std::cout << "1 ~ 9단출력\n";
 
 	for (i = 1; i <= 9; i++)
 	{

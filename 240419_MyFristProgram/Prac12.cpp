@@ -15,9 +15,9 @@ void main()
 
 	if (Nation_name == "list")
 	{
-		for (int i = 0; i < arraySize; i++)
+		for (string Nation_name:Nation)
 		{
-			cout << Nation[i] << endl;
+			cout << Nation_name << endl;
 		}
 	}
 
@@ -32,6 +32,7 @@ void main()
 				break;
 			}
 		}
+
 		if (Check == false)
 		{
 				cout << "해당나라는 없습니다";
