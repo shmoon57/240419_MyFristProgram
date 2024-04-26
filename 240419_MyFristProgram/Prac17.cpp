@@ -69,7 +69,7 @@ void main()
 	v.erase(v.begin() + clear_number_index - 1, v.begin() + clear_number_index);
 	
 	// 제거한 원소 출력
-	for (int i = 0; i < v.size; i++)
+	for (int i = 0; i < 5; i++)
 	{
 		cout << v.at(i) << ' ';
 	}
