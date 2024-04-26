@@ -46,6 +46,7 @@ int main()
 			if (input == "list")
 			{
 				type = 1;
+
 			}
 			else if (input == city[i])
 			{

@@ -15,6 +15,7 @@ void main()
 
 	// 정수를 저장하는 빈 벡터 v 선언
 	vector<int>v; 
+	// 원소 값 2배를 저장하는 벡터 v_2 선언
 	vector<int>v_2(5);
 
 	cout << "5개의 정수를 입력할 예정입니다 \n";
@@ -68,7 +69,7 @@ void main()
 	v.erase(v.begin() + clear_number_index - 1, v.begin() + clear_number_index);
 	
 	// 제거한 원소 출력
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < v.size; i++)
 	{
 		cout << v.at(i) << ' ';
 	}
@@ -83,7 +84,7 @@ void main()
 
 	for (int i = 0; i < v.size(); i++)
 	{
-			cout << v.at(i) << ' ';
+		cout << v.at(i) << ' ';
 	}
 
 }
