@@ -1,17 +1,9 @@
-// 종합 실습
-/*
-1. 사용자에게 몇 명의 학생을 입력할 것인지 묻기
-2. 학생 수 만큼 이름 - 나이 - 생일 순으로 한번에 입력 받기
-3. 4가지 기능 구현
-1) 학생정보 출력
-2) 평균 나이
-3) 가장 빠른 생일
-4) 프로그램 종료
-*/
+// 종합 실습 파일 분리 
 
 #include <iostream>
 #include <string>
 #include <vector>
+#include "MyFunctions.h"
 
 #define NAME 0
 #define AGE 1
@@ -19,16 +11,12 @@
 
 using namespace std;
 
-void printStudentInfo(string** info, int count); // 학생 정보 확인하는 인포 함수
-
-// 함수
-
 int main()
 {
 	// 데이터 정의
-	int student_count; 
+	int student_count;
 	int sum_age = 0;
-	
+
 	while (true)
 	{
 		// 입력단
@@ -67,19 +55,14 @@ int main()
 			printStudentInfo(student_info_arr, student_count);
 
 			// 2. 평균 나이 구하기
-			for (int i = 0; i < student_count; i++)
-			{
-				sum_age = sum_age + stoi(student_info_arr[i][AGE]); // 나이 합 구하기
-			}
+			PrintSumAge(student_info_arr, student_count, sum_age);
 
-			cout << endl << "나이의 합 :" << sum_age << endl;
 
-			cout << "평균 나이 : " << float(sum_age / student_count) << endl; // 실수형으로 변환
 
 			// 3. 가장 빠른 생일 구하기
 
 			vector<int>birthday_info(student_count); // 3-1) 생일 원소를 담을 빈 벡터 birthday _ info 생성
-			
+
 
 			for (int i = 0; i < student_count; i++)
 			{
@@ -105,7 +88,7 @@ int main()
 				delete[] student_info_arr[i];
 			}
 			delete[] student_info_arr;
-			
+
 			break;
 		}
 	}
@@ -115,17 +98,3 @@ int main()
 }
 
 
-void printStudentInfo(string** info, int count)// 학생 정보 출력 함수 , 2차원 동적배열 값 확인
-{
-	cout << "<학생 정보를 출력합니다>" << endl << endl;
-	cout << "이름 나이 생일" << endl;
-
-	for (int i = 0; i < count; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			cout << info[i][j] << ' ';
-		}
-		cout << endl;
-	}
-}

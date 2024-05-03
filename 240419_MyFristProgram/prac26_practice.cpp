@@ -19,16 +19,19 @@
 
 using namespace std;
 
+// 함수
 void printStudentInfo(string** info, int count); // 학생 정보 확인하는 인포 함수
 
-// 함수
+void Sumage(string** info, int count, int sum_age); //
+
+
 
 int main()
 {
 	// 데이터 정의
-	int student_count; 
+	int student_count;
 	int sum_age = 0;
-	
+
 	while (true)
 	{
 		// 입력단
@@ -67,19 +70,12 @@ int main()
 			printStudentInfo(student_info_arr, student_count);
 
 			// 2. 평균 나이 구하기
-			for (int i = 0; i < student_count; i++)
-			{
-				sum_age = sum_age + stoi(student_info_arr[i][AGE]); // 나이 합 구하기
-			}
-
-			cout << endl << "나이의 합 :" << sum_age << endl;
-
-			cout << "평균 나이 : " << float(sum_age / student_count) << endl; // 실수형으로 변환
-
+			Sumage(student_info_arr, student_count, sum_age);
+			
 			// 3. 가장 빠른 생일 구하기
 
 			vector<int>birthday_info(student_count); // 3-1) 생일 원소를 담을 빈 벡터 birthday _ info 생성
-			
+
 
 			for (int i = 0; i < student_count; i++)
 			{
@@ -105,7 +101,7 @@ int main()
 				delete[] student_info_arr[i];
 			}
 			delete[] student_info_arr;
-			
+
 			break;
 		}
 	}
@@ -128,4 +124,16 @@ void printStudentInfo(string** info, int count)// 학생 정보 출력 함수 , 2차원 동
 		}
 		cout << endl;
 	}
+}
+
+void Sumage(string** info, int count, int sum)
+{
+	for (int i = 0; i < count; i++)
+	{
+		sum = sum + stoi(info[i][AGE]); // 나이 합 구하기
+	}
+
+	cout << endl << "나이의 합 :" << sum << endl;
+
+	cout << "평균 나이 : " << float(sum/count) << endl; // 실수형으로 변환
 }
