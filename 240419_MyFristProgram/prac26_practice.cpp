@@ -7,6 +7,15 @@
 2) 평균 나이
 3) 가장 빠른 생일
 4) 프로그램 종료
+
+// 반복해서 선택가능
+// 함수로 기능 묶어서 main 함수 정리하기
+// 입력 검사하기 (문자열, 숫자, 길이, 생년월일 양식)
+// 학생정보 수정
+// 2번째 기능실행 될 때, 5) 항목 추가
+// 이름, 나이, 생일, 과목 추가 (column 추가)
+// 과목별 현황 확인
+
 */
 
 #include <iostream>
@@ -18,13 +27,6 @@
 #define BIRTHDAY 2
 
 using namespace std;
-
-// 함수
-void printStudentInfo(string** info, int count); // 학생 정보 확인하는 인포 함수
-
-void Sumage(string** info, int count, int sum_age); //
-
-
 
 int main()
 {
@@ -69,8 +71,8 @@ int main()
 			// 1. 학생 정보 출력 함수  
 			printStudentInfo(student_info_arr, student_count);
 
-			// 2. 평균 나이 구하기
-			Sumage(student_info_arr, student_count, sum_age);
+			// 2. 평균 나이 출력 함수
+			PrintSumAge(student_info_arr, student_count, sum_age);
 			
 			// 3. 가장 빠른 생일 구하기
 
@@ -83,7 +85,7 @@ int main()
 			}
 
 			// 3-3) 반복문으로 최솟값을 구해 생일이 가장 빠른 원소값 출력
-			int fastest_birth = INT16_MAX;
+			int fastest_birth = INT32_MAX;
 
 			for (int i = 0; i < student_count; i++)
 			{
@@ -126,7 +128,7 @@ void printStudentInfo(string** info, int count)// 학생 정보 출력 함수 , 2차원 동
 	}
 }
 
-void Sumage(string** info, int count, int sum)
+void PrintSumAge(string** info, int count, int sum)
 {
 	for (int i = 0; i < count; i++)
 	{
