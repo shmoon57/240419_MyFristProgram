@@ -1,3 +1,9 @@
+/* 추가 내용
+1. "사용자이름 비밀번호" 양식과는 다르게 값을 1개만 또는 3개 이상 입력할 경우 오류 메시지 + 다시 입력 가능하도록
+2. 비밀번호는 6자리 이상 ~ 18자리 미만으로 적도록
+3. 정상적으로 입력 받았을 경우에만 파일에 쓰기!
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -30,7 +36,7 @@ int main()
 	{
 		write_file << info_name[i] << " "<< info_pw[i] << endl;
 	}
-
+	
 	write_file.close();
 
 	cout << "----------회원 명부 파일 읽기----------" << endl;
@@ -46,7 +52,6 @@ int main()
 		cout << line << endl;
 	}
 	
-
-
+	read_file.close();
 
 }
