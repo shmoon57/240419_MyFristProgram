@@ -132,6 +132,12 @@
     <ClCompile Include="Prac32.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Prac33.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Prac34.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyFunctions.h">
