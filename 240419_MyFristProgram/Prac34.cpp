@@ -2,7 +2,7 @@
 
 using namespace std;
 
-struct position
+struct Rectangle
 {
 	float width;
 	float height;
@@ -10,11 +10,11 @@ struct position
 
 int main()
 {
-	position Rectangle;
+	Rectangle area;
 
 	cout << "가로, 세로 길이를 입력하세요. : ";
-	cin >> Rectangle.width >> Rectangle.height;
-	cout << "넓이 : " << Rectangle.width * Rectangle.height;
+	cin >> area.width >> area.height;
+	cout << "넓이 : " << area.width * area.height;
 
 	return 0;
 }
