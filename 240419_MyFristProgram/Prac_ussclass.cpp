@@ -21,6 +21,7 @@ public:
 	}
 	 //规过 2)  Rectangle(float width , float height) : m_width(width),m_height(height) {}
 
+
 private:
 	// 鞘靛 m_width , m_height 积己
 	float m_width;
