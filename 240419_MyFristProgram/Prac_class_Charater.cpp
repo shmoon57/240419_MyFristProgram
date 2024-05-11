@@ -8,13 +8,13 @@ int main()
 	string name; // 사용자가 입력할 닉네임 선언
 	string name_change; // 사용자가 입력해 변경할 닉네임 선언
 	int type; // 선택사항 입력
-	bool loop = true; // 
+	bool loop = true; // while문 반복 위한 불형 변수 선언
 
 	cout << " -------- 미니 게임 --------" << endl;
 	cout << "사용할 닉네임을 입력해주세요 : ";
 
 	cin >> name;
-	Character character(name);
+	Character character(name); // character 인스턴스 생성
 
 	cout << " ---- 숫자 입력 ----" << endl;
 	cout << " 1 : 닉네임 변경 " << endl;
@@ -57,7 +57,6 @@ int main()
 		case 5:
 			character.print_state();
 			break;
-
 		}
 	}
 }
