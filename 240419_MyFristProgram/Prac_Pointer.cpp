@@ -16,7 +16,6 @@ void reverse(int * array)
 	}
 }
 
-
 int main()
 {
 	int array[Size] = { 1,2,3,4,5 };
