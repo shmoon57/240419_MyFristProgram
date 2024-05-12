@@ -150,7 +150,7 @@
     <ClCompile Include="Prrr.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac_ussclass.cpp">
+    <ClCompile Include="Prac_class_Rectangle.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Prac_getter &amp; setter.cpp">

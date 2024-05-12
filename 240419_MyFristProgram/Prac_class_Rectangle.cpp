@@ -1,4 +1,4 @@
-// 실습 Class 사용해보기
+// 실습 1 Class 사용해보기
 
 #include <iostream>
 
@@ -13,14 +13,13 @@ public:
 	{
 		return m_width * m_height;
 	}
-	// 생성자에서 멤버 변수 초기화 
+	// 생성자에서 멤버 변수(필드) 입력값으로 받기
 	 Rectangle(float width , float height)
 	{
-		m_width = width;
-		m_height = height;
+		this->m_width = width;
+		this->m_height = height;
 	}
 	 //방법 2)  Rectangle(float width , float height) : m_width(width),m_height(height) {}
-
 
 private:
 	// 필드 m_width , m_height 생성
@@ -36,7 +35,7 @@ void main()
 	cout << "사각형의 가로와 세로 길이를 입력해주세요. (띄어쓰기로 구분) ";
 	cin >> width >> height;
 	
-	// 인스턴스 생성 + 생성자 실행 ,필드 초기화
+	// rectangle 인스턴스 생성 
 	Rectangle rectangle(width, height); 
 	// 방법 2) Rectangle rectangle = {width, height}; 
 	
@@ -49,8 +48,8 @@ void main()
 	cout << "다른 클래스로 변수에 복사한 넓이는 : " << copy1.area() << endl;
 
 	// 기본 생성자로 생성된 다른 클래스 변수에 복사(할당 이용)
-	Rectangle R2(12, 5);
-	Rectangle copy2 = R2;
+	Rectangle Basic(12, 5);
+	Rectangle copy2 = Basic;
 	
 	// 할당 이용 넓이 구하기
 	cout << "가로 12 , 세로 5로 할당된 넓이는 : " << copy2.area();
