@@ -135,7 +135,7 @@
     <ClCompile Include="Prac33.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac35.cpp">
+    <ClCompile Include="Prac_class_naming.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Prac34.cpp">
@@ -162,6 +162,12 @@
     <ClCompile Include="Character.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\Login_Func_john\03_pw_check_john.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\Login_Func_john\Login_Func.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyFunctions.h">
@@ -177,6 +183,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Character.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\Login_Func_john\Login_Func.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
