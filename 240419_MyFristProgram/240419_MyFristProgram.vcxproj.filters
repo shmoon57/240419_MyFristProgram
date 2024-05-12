@@ -138,7 +138,7 @@
     <ClCompile Include="Prac_class_naming.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac34.cpp">
+    <ClCompile Include="Prac_struct_Ex.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="User_info.cpp">
