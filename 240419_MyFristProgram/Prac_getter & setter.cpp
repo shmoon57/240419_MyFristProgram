@@ -1,4 +1,4 @@
-// getter & setter 사용
+// getter & setter 사용해보기
 #include <iostream>
 
 using namespace std;
@@ -12,11 +12,11 @@ public:
 	{
 		return m_width * m_height;
 	}
-	// 생성자에서 멤버 변수 초기화 
+	// 생성자에서 멤버 변수(필드) 입력값으로 받기
 	Rectangle(float width, float height)
 	{
-		m_width = width;
-		m_height = height;
+		this->m_width = width;
+		this->m_height = height;
 	}
 
 	// getter 함수 선언
@@ -29,12 +29,12 @@ public:
 	}
 
 	// setter 함수 선언
-	void set_m_width(float m_width) {
-		this->m_width = m_width;
+	void set_m_width(float width) {
+		this->m_width = width;
 	}
 
-	void set_m_height(float m_height) {
-		this->m_height = m_height;
+	void set_m_height(float height) {
+		this->m_height = height;
 	}
 
 private:
@@ -48,8 +48,9 @@ void main()
 	float width;
 	float height;
 
+	// 클래스 선언
 	Rectangle rect(1, 2);
-	cout << "Rectangle rect(1, 2)로 설정한 넓이는 : "<< rect.area() << endl;
+	cout << "Rectangle rect(1, 2)로 설정한 넓이는 : " << rect.area() << endl;
 
 	cout << "사각형의 가로와 세로 길이를 입력해주세요. (띄어쓰기로 구분) ";
 	cin >> width >> height;
