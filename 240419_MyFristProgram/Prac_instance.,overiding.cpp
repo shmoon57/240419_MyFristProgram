@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 class Shape
 {
 protected:
@@ -27,7 +26,7 @@ public:
 class Rectangle : Shape
 {
 public:
-	Rectangle() {}
+
 	float m_col; // 세로 
 	Rectangle(float base, int col, int side_num)
 	{
@@ -41,12 +40,17 @@ public:
 		return (m_base * m_col);
 	}
 
+	void printinfo()
+	{
+		cout << "사각형의 넓이는 : " << (m_col * m_base) << endl;
+	}
+
 };
 
 class Triangle : Shape
 {
 public:
-	Triangle() {}
+	
 	float m_height; // 높이
 	Triangle(float base, int height, int side_num)
 	{
@@ -57,6 +61,11 @@ public:
 	float T_area()
 	{
 		return (m_height * m_base) / 2;
+	}
+	
+	void printinfo()
+	{
+		cout << "삼각형의 넓이는 : " << (m_height * m_base) / 2 << endl;
 	}
 
 };
@@ -77,16 +86,32 @@ int main()
 	shape.printinfo();
 	cout << endl;
 
-
-	cout << "삼각형의 높이를 입력해주세요 : ";
-	cin >> height;
-	Triangle triangle(base, height, side_num);
-	cout << "삼각형의 넓이는 : " << triangle.T_area() << endl;
-
-	cout << "사각형의 세로 길이를 입력해주세요 : ";
-	cin >> col;
-	Rectangle rectangle(base, col, side_num);
-	cout << "사각형의 넓이는 : " << rectangle.R_area() << endl;
+	if (side_num == 3)
+	{
+		cout << "삼각형의 높이를 입력해주세요 : ";
+		cin >> height;
+		Triangle triangle(base, height, side_num);
+		// cout << "삼각형의 넓이는 : " << triangle.T_area() << endl;
+		// 오버라이딩
+		triangle.printinfo();
+		cout << endl;
+	}
+	
+	else if (side_num ==4)
+	{
+		cout << "사각형의 세로 길이를 입력해주세요 : ";
+		cin >> col;
+		Rectangle rectangle(base, col, side_num);
+		// cout << "사각형의 넓이는 : " << rectangle.R_area() << endl;
+		// 오버라이딩
+		rectangle.printinfo();
+		cout << endl;
+	}
+	
+	else
+	{
+		cout << "해당되는 데이터 없음 " << endl;	
+	}
 
 	return 0;
 }
