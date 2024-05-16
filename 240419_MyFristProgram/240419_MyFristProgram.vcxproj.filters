@@ -168,6 +168,9 @@
     <ClCompile Include="..\..\..\..\Downloads\Login_Func_john\Login_Func.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Prac_instance.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyFunctions.h">
