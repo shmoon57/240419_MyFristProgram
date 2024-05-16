@@ -40,9 +40,16 @@ public:
 		return (m_base * m_col);
 	}
 
+	/* 오버라이딩
 	void printinfo()
 	{
 		cout << "사각형의 넓이는 : " << (m_col * m_base) << endl;
+	}*/
+
+	// 오버로딩
+	void printinfo(float base, float col)
+	{
+		cout << "사각형의 넓이는 : " << (col * base) << endl;
 	}
 
 };
@@ -62,10 +69,17 @@ public:
 	{
 		return (m_height * m_base) / 2;
 	}
-	
+	/* 오버라이딩
 	void printinfo()
 	{
 		cout << "삼각형의 넓이는 : " << (m_height * m_base) / 2 << endl;
+	}
+	*/
+
+	// 오버로딩
+	void printinfo(float base, float height)
+	{
+		cout << "삼각형의 넓이는 : " << (height * base) / 2 << endl;
 	}
 
 };
@@ -92,8 +106,11 @@ int main()
 		cin >> height;
 		Triangle triangle(base, height, side_num);
 		// cout << "삼각형의 넓이는 : " << triangle.T_area() << endl;
-		// 오버라이딩
+		/*오버라이딩 case
 		triangle.printinfo();
+		*/
+		// 오버로딩
+		triangle.printinfo(base, height);
 		cout << endl;
 	}
 	
@@ -103,8 +120,11 @@ int main()
 		cin >> col;
 		Rectangle rectangle(base, col, side_num);
 		// cout << "사각형의 넓이는 : " << rectangle.R_area() << endl;
-		// 오버라이딩
+		/* 오버라이딩 case
 		rectangle.printinfo();
+		*/
+		//오버로딩
+		rectangle.printinfo(base, col);
 		cout << endl;
 	}
 	

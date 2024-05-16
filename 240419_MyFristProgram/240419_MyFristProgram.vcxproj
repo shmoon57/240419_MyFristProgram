@@ -158,7 +158,7 @@
     <ClCompile Include="Prac13.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Prac_instance.,overiding.cpp" />
+    <ClCompile Include="Prac_instance_overiding,overloading.cpp" />
     <ClCompile Include="Prac_Pointer.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
