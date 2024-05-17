@@ -1,4 +1,10 @@
 // 실습 2 회원 명부를 응용한 로그인 기능
+/*
+회원 가입 기능 추가
+아이디 중복 불가능
+비밀번호 패턴을 일반적인 홈페이지 가입과 같이 대문자, 소문자, 특수문자 포함 8자리 이상 20글자 미만으로 설정
+해당 계정으로 로그인까지!
+*/
 
 #include <iostream>
 #include <vector>
@@ -11,6 +17,7 @@ int main()
 {
 	string input_name;
 	string input_pw;
+	string input_phone_num;
 	vector<string> info;
 	bool Login = false;
 	
@@ -42,6 +49,7 @@ int main()
 			if (input_pw == info.at(i + 1))
 			{
 				Login = true;
+				break;
 			}
 		}
 	}
@@ -50,13 +58,11 @@ int main()
 	{
 		cout << "로그인 성공" << endl;
 	}
-	
+
 	else
 	{
 		cout << "로그인 실패" << endl;
 	}
-	
-	
 
 }
 	

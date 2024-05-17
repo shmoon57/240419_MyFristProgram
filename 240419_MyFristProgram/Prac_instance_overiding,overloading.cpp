@@ -1,3 +1,7 @@
+// 상속 실습
+// 오버라이딩 오버 로딩 추가
+// 추상 클래스 추가
+
 #include <iostream>
 
 using namespace std;
@@ -7,8 +11,10 @@ class Shape
 protected:
 	int m_side_num;
 	float m_base;
-
+	
 public:
+	// 순수 가상 함수
+	virtual void draw() = 0;
 	Shape() {}
 	Shape(int side_num, float base)
 	{
@@ -18,12 +24,13 @@ public:
 
 	void printinfo()
 	{
+		cout << "입력하신 결과를 출력합니다" << endl;
 		cout << "밑변의 길이는 : " << m_base << endl;
 		cout << "변의 개수는 : " << m_side_num << endl;
 	}
 };
 
-class Rectangle : Shape
+class Rectangle : public Shape
 {
 public:
 
@@ -52,9 +59,13 @@ public:
 		cout << "사각형의 넓이는 : " << (col * base) << endl;
 	}
 
+	void draw() override
+	{
+		cout << "사각형" << endl;
+	}
 };
 
-class Triangle : Shape
+class Triangle : public Shape
 {
 public:
 	
@@ -82,6 +93,20 @@ public:
 		cout << "삼각형의 넓이는 : " << (height * base) / 2 << endl;
 	}
 
+	void draw() override
+	{
+		cout << "삼각형" << endl;
+	}
+};
+
+class Circle : public Shape
+{
+	public:	
+		void draw() override
+		{
+			cout << "원" << endl;
+		}
+
 };
 
 int main()
@@ -95,9 +120,10 @@ int main()
 	cin >> side_num;
 	cout << "밑변의 길이를 입력해주세요 : ";
 	cin >> base;
-	Shape shape(side_num, base);
-	cout << endl << "입력하신 결과를 출력합니다" << endl;
-	shape.printinfo();
+	cout << endl;
+
+	//Shape shape(side_num, base);
+	//shape.printinfo();
 	cout << endl;
 
 	if (side_num == 3)
@@ -112,6 +138,8 @@ int main()
 		// 오버로딩
 		triangle.printinfo(base, height);
 		cout << endl;
+		cout << "도형의 이름 : ";
+		triangle.draw();
 	}
 	
 	else if (side_num ==4)
@@ -126,6 +154,8 @@ int main()
 		//오버로딩
 		rectangle.printinfo(base, col);
 		cout << endl;
+		cout << "도형의 이름 : ";
+		rectangle.draw();
 	}
 	
 	else

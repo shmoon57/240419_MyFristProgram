@@ -1,6 +1,5 @@
 // 실습 7 vector 성능 체크
 
-
 #include <iostream>
 #include <vector> 
 #include <time.h>
@@ -12,8 +11,8 @@ void main()
 	time_t start, end;
 	double result;
 
-
-	vector<int> test_vec1(1); // 크기 1 정수형 벡터 생성
+	// 크기 1 정수형 벡터 생성
+	vector<int> test_vec1(1); 
 
 	// pushback 1억회 수행 , 소요시간을 ms 단위로 출력
 	start = clock();

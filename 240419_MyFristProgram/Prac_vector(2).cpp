@@ -1,4 +1,4 @@
-// 실습 8 vector 증복삭제
+// 실습 8 vector 증복 삭제
 
 #include <iostream>
 #include <vector>

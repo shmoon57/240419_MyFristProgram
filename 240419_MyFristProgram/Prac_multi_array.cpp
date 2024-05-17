@@ -3,8 +3,8 @@
 // 나이 입력시 이름 , 국어점수 출력
 
 #include <iostream>
-#define ROW_SIZE = 5;
-#define COL_SIZE = 4; // 메모리 때문에
+#define ROW_SIZE 5
+#define COL_SIZE 4 // 메모리 때문에
 using namespace std;
 
 
@@ -13,7 +13,7 @@ int main()
 	// 데이터 정의
 	string name;
 	string InputAge;
-	string info[5][4] =
+	string info[ROW_SIZE][COL_SIZE] =
 	{
 		{"이름","나이","국어","수학"},
 		{"방지턱","19","66","68"},
@@ -52,9 +52,9 @@ int main()
 
 	case 1: // 나이가 19살
 	
-		for (int i = 0; i < 5; i++)
+		for (int i = 0; i < ROW_SIZE; i++)
 		{
-			for(int j= 0; j < 4; j++)
+			for(int j= 0; j < COL_SIZE; j++)
 			{
 				if (j == 1)
 				{
@@ -70,9 +70,9 @@ int main()
 
 	case 2: // 나이가 20살
 	
-		for (int i = 0; i < 5; i++)
+		for (int i = 0; i < ROW_SIZE; i++)
 		{
-			for (int j = 0; j < 4; j++)
+			for (int j = 0; j < COL_SIZE; j++)
 			{
 				if (j == 1)
 				{

@@ -23,7 +23,7 @@ void main()
 		cout << "y를 입력하세요 : ";
 		cin >> y;
 
-		// 0 , 음수 입력시 에러메시지 출력 , while 문 활용
+		// 0 , 음수 입력시 에러메시지 출력, While 문 활용
 		if (x <= 0 || y <= 0)
 		{
 			cout << "x와 y 모두 양수를 입력해주세요.\n";
@@ -59,7 +59,6 @@ void main()
 				delete[] arr;
 				break;
 		}
-
 
 	}
 }

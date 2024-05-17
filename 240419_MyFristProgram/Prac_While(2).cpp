@@ -1,5 +1,4 @@
-// while문 사용해보기
-//(1) 구구단
+// while문 사용해보기 - 구구단
 
 #include <iostream>
 
@@ -15,7 +14,6 @@ int main()
 		j = 1;
 		while (j <= 9)
 		{
-			
 			std::cout << i << " * " << j << " = " << i * j << std::endl;
 			j++;
 		}

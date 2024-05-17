@@ -1,11 +1,27 @@
-// 실습 namespace 사용해보기!
+// 종합 실습 + 파일 분리 추가
+/*
+1. 사용자에게 몇 명의 학생을 입력할 것인지 묻기
+2. 학생 수 만큼 이름 - 나이 - 생일 순으로 한번에 입력 받기
+3. 4가지 기능 구현
+1) 학생정보 출력
+2) 평균 나이
+3) 가장 빠른 생일
+4) 프로그램 종료
 
-// 종합 실습 파일 분리 
+// 반복해서 선택가능
+// 함수로 기능 묶어서 main 함수 정리하기
+// 입력 검사하기 (문자열, 숫자, 길이, 생년월일 양식)
+// 학생정보 수정
+// 2번째 기능실행 될 때, 5) 항목 추가
+// 이름, 나이, 생일, 과목 추가 (column 추가)
+// 과목별 현황 확인
+
+*/
 
 #include <iostream>
 #include <string>
 #include <vector>
-#include "MyFunctions.h"
+#include "Prac_review.h"
 
 #define NAME 0
 #define AGE 1
@@ -54,10 +70,10 @@ int main()
 			cout << endl;
 
 			// 1. 학생 정보 출력 함수  
-			sh_func::printStudentInfo(student_info_arr, student_count);
+			printStudentInfo(student_info_arr, student_count);
 
 			// 2. 평균 나이 구하기
-			sh_func::PrintSumAge(student_info_arr, student_count, sum_age);
+			PrintSumAge(student_info_arr, student_count, sum_age);
 
 
 

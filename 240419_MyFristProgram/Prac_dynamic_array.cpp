@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-	
 	int num;
 	int input_grade;
 	int grade_sum = 0;
@@ -13,7 +12,6 @@ int main()
 
 	cout << "몇명의 학생 성적을 입력하시겠습니까? ";
 	cin >> num;
-	
 
 	int *grade = new int[num];
 
@@ -32,4 +30,6 @@ int main()
 	cout << "성적 평균 : " << grade_avg;
 
 	delete[] grade;
+
+	return 0;
 }

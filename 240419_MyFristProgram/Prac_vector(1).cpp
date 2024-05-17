@@ -1,4 +1,4 @@
-	// vector 조작
+// vector 연습 - 240426
 
 #include <iostream>
 #include <vector>

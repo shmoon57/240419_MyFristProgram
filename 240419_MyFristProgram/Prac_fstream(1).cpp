@@ -1,3 +1,5 @@
+// 실습 0 거꾸로 읽기
+
 #include <iostream>
 #include <fstream> // 파일 읽고 쓰기 위한 기능 제공 헤더
 #include <vector>

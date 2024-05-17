@@ -18,121 +18,115 @@
     <ClCompile Include="240419_MyFristProgram.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac1.cpp">
+    <ClCompile Include="Prac_Input,Output.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Prac_main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac2.cpp">
+    <ClCompile Include="Prac_If%281%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac3.cpp">
+    <ClCompile Include="Prac_If%282%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac4.cpp">
+    <ClCompile Include="Prac_Switch.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac5.cpp">
+    <ClCompile Include="Prac_ternary_operater.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac6.cpp">
+    <ClCompile Include="Prac_multiplication_table%281%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac6%282%29_.cpp">
+    <ClCompile Include="Prac_multiplication_table%282%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac7.cpp">
+    <ClCompile Include="Prac_sigma.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac8.cpp">
+    <ClCompile Include="Prac_While%282%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac8%282%29.cpp">
+    <ClCompile Include="Prac_While%281%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac9.cpp">
+    <ClCompile Include="Prac_Input_sum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac10.cpp">
+    <ClCompile Include="Prac_Input_star.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac11.cpp">
+    <ClCompile Include="Prac_func.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac12.cpp">
+    <ClCompile Include="Prac_array.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac12Process.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Prac13.cpp">
+    <ClCompile Include="Prac_multi_array.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Prac_Pointer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac15.cpp">
+    <ClCompile Include="Prac_dynamic_array.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac16.cpp">
+    <ClCompile Include="Prac_2_dynamic_array%281%29.cpp.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac17.cpp">
+    <ClCompile Include="Prac_vector%281%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac18.cpp">
+    <ClCompile Include="Prac_check_time%28%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac19.cpp">
+    <ClCompile Include="Prac_vector_test.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac20.cpp">
+    <ClCompile Include="Prac_vector%282%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac21.cpp">
+    <ClCompile Include="Prac_2_dynamic_array%282%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac22.cpp">
+    <ClCompile Include="Prac_list.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac23.cpp">
+    <ClCompile Include="Prac_string%281%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac24.cpp">
+    <ClCompile Include="Prac_string%282%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac25.cpp">
+    <ClCompile Include="Prac_string%283%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac27.cpp">
+    <ClCompile Include="Prac_review.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="MyFunctions.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="prac26.cpp">
+    <ClCompile Include="review.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="prac26_practice.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac28.cpp">
+    <ClCompile Include="Prac_namespace.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac29.cpp">
+    <ClCompile Include="Prac_lotto.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="prac30.cpp">
+    <ClCompile Include="Prac_fstream%281%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac31.cpp">
+    <ClCompile Include="Prac_fstream%282%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac32.cpp">
+    <ClCompile Include="Prac_fstream%283%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Prac33.cpp">
+    <ClCompile Include="Prac_fstream%284%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Prac_class_naming.cpp">
@@ -145,9 +139,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Account_service.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Prrr.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Prac_class_Rectangle.cpp">
@@ -176,7 +167,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyFunctions.h">
+    <ClInclude Include="Prac_review.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Account_service.h">

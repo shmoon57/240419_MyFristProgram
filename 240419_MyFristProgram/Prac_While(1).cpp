@@ -19,4 +19,6 @@ int main()
 	}
 
 	std::cout << "1부터 " << num << " 까지의 합은 : " << sum;
+
+	return 0;
 }

@@ -19,8 +19,8 @@ using namespace std;
 		{
 			break;
 		}
-	}
 
+	}
 
 	end = time(NULL);
 
@@ -28,9 +28,9 @@ using namespace std;
 
 	cout << "수행시간 : " << result << "second" << "\n";
 
-	return 0;
-	
-} */
+	return 0;	
+} 
+*/
 
 int main()
 {
