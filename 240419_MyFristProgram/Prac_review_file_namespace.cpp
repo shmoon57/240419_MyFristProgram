@@ -3,18 +3,23 @@
 1. 사용자에게 몇 명의 학생을 입력할 것인지 묻기
 2. 학생 수 만큼 이름 - 나이 - 생일 순으로 한번에 입력 받기
 3. 4가지 기능 구현
-1) 학생정보 출력
-2) 평균 나이
-3) 가장 빠른 생일
-4) 프로그램 종료
+1) 학생정보 출력 - 완료
+2) 평균 나이 - 완료
+3) 가장 빠른 생일 - 완료
+4) 프로그램 종료 - 완료
 
 // 반복해서 선택가능
-// 함수로 기능 묶어서 main 함수 정리하기
+// 함수로 기능 묶어서 main 함수 정리하기 - 완료
 // 입력 검사하기 (문자열, 숫자, 길이, 생년월일 양식)
 // 학생정보 수정
 // 2번째 기능실행 될 때, 5) 항목 추가
 // 이름, 나이, 생일, 과목 추가 (column 추가)
 // 과목별 현황 확인
+
+// 실습 namespace 사용하기
+// 1. 앞서 만들었던 헤더 파일을 main함수가 있는 파일에서 불러오기
+// 2. 앞서 만들었던 헤더 파일에 있는 내용을 적절한 namespace 이름으로 감싸기
+// 3. main 함수가 있는 파일에서 헤더에 있는 내용을 namespace를 거쳐서 사용하기
 
 */
 #include <iostream>
@@ -32,7 +37,6 @@ int main()
 {
 	// 데이터 정의
 	int student_count;
-	int sum_age = 0;
 
 	while (true)
 	{
@@ -41,11 +45,8 @@ int main()
 		cin >> student_count;
 		cout << endl;
 
-		if (student_count < 0) // 정상 작동 X
-		{
-			cout << "양수를 입력해주세요" << endl << endl;
-		}
-		else // 정상 작동할 경우
+		// 정상 작동 
+		if (student_count > 0) 
 		{
 			// 2차원 동적 배열 선언
 			string** student_info_arr = new string * [student_count];
@@ -71,45 +72,37 @@ int main()
 			// 1. 학생 정보 출력 함수  
 			sh_func::printStudentInfo(student_info_arr, student_count);
 
-			// 2. 평균 나이 구하기
-			sh_func::PrintSumAge(student_info_arr, student_count, sum_age);
+			// 2. 평균 나이 출력 함수
+			sh_func::PrintSumAge(student_info_arr, student_count);
 
-			// 3. 가장 빠른 생일 구하기
+			// 3. 가장 빠른 생일 출력 함수
+			sh_func::PrintEarliestBirth(student_info_arr, student_count);
 
-			vector<int>birthday_info(student_count); // 3-1) 생일 원소를 담을 빈 벡터 birthday _ info 생성
-
-
-			for (int i = 0; i < student_count; i++)
-			{
-				birthday_info[i] = stoi(student_info_arr[i][BIRTHDAY]); // 3-2) 생일 원소를 담고 stoi로 실수형을 정수형으로 변환		
-			}
-
-			// 3-3) 반복문으로 최솟값을 구해 생일이 가장 빠른 원소값 출력
-			int fastest_birth = INT16_MAX;
-
-			for (int i = 0; i < student_count; i++)
-			{
-				if (fastest_birth > birthday_info.at(i))
-				{
-					fastest_birth = birthday_info.at(i);
-				}
-
-			}
-			cout << endl << "가장 빠른 생일 : " << fastest_birth << endl;
+			// 4. 학생 정보 수정 함수
+			sh_func::EditStudentInfo(student_info_arr, student_count);
+			// 바뀐 학생 정보 출력  
+			sh_func::printStudentInfo(student_info_arr, student_count);
 
 			// 2차원 동적 배열 해제
 			for (int i = 0; i < student_count; i++)
 			{
 				delete[] student_info_arr[i];
 			}
-			delete[] student_info_arr;
 
+			delete[] student_info_arr;
 			break;
+			
 		}
+
+		else // 정상 작동 X
+		{
+			cout << "잘못된 값을 입력했습니다 ! " << endl << "양수를 입력해주세요" << endl << endl;
+		}
+
 	}
 
 	// 프로그램 종료 
-	cout << endl << "프로그램을 종료하겠습니다 ! ";
+	cout << endl << "프로그램을 종료하겠습니다 ! " << endl;
 }
 
 

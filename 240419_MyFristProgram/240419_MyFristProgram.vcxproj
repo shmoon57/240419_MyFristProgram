@@ -136,6 +136,9 @@
     </ClCompile>
     <ClCompile Include="Account_service.cpp" />
     <ClCompile Include="Character.cpp" />
+    <ClCompile Include="dadad.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Prac_main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
