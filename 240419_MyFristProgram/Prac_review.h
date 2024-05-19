@@ -9,6 +9,15 @@ namespace sh_func
 #ifndef _Print_
 #define _Print_
 
+	// 입력한 이름이 한글이나 알파벳인지 확인하는 함수
+	bool isName(string& str);
+	
+	// 입력한 나이가 숫자인지 확인 하는 함수
+	bool isNumber(string& str);
+
+	// 입력한 생일이 YYMM 형식이 맞는지 확인하는 함수 리턴 값 isNumber()
+	bool isYYMM(string& str);
+
 	// 1. 학생 정보 출력 함수 선언
 	void printStudentInfo(string** info, int student_count);
 

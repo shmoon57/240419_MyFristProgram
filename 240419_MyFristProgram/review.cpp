@@ -11,6 +11,43 @@ using namespace std;
 
 namespace sh_func
 {
+	// ÀÔ·ÂÇÑ ÀÌ¸§ÀÌ ÇÑ±ÛÀÌ³ª ¾ËÆÄºªÀÎÁö È®ÀÎÇÏ´Â ÇÔ¼ö
+	bool isName(string& str)
+	{
+		for (char c : str)
+		{
+			// ÇÑ±Û ¹®ÀÚ ¿µ¿ªÀÇ À¯´ÏÄÚµå ¹üÀ§´Â 0xAC00(°¡)¿¡¼­ 0xD7A3(ÆR) - ¿À·ù¹ß»ı 
+			if (!isalpha(c) && (c < 0xAC00 || c > 0xD7A3))
+			{
+				return false;
+			}
+		}
+	}
+	
+	// ÀÔ·ÂÇÑ ³ªÀÌ°¡ ¼ıÀÚÀÎÁö È®ÀÎ ÇÏ´Â ÇÔ¼ö
+	bool isNumber(string& str)
+	{
+		for (char c : str)
+		{
+			// ¹®ÀÚ°¡ ¼ıÀÚ°¡ ¾Æ´Ñ°æ¿ì
+			if (!isdigit(c)) 
+			{
+				return false;
+			}
+		}
+	}
+
+	// ÀÔ·ÂÇÑ »ıÀÏÀÌ YYMM Çü½ÄÀÌ ¸Â´ÂÁö È®ÀÎÇÏ´Â ÇÔ¼ö
+	bool isYYMM(string& str)
+	{
+		if (str.length() != 4)
+		{
+			// ÇÔ¼ö¸¦ È£ÃâÇÏ¿© »ı³â¿ùÀÏÀÌ ¼ıÀÚ·Î¸¸ ±¸¼ºµÇ¾î ÀÖ´ÂÁö È®ÀÎÇÏ±â À§ÇÔ
+			return isNumber(str);
+		}
+	}
+
+
 	// ÇĞ»ı Á¤º¸ Ãâ·Â ÇÔ¼ö , 2Â÷¿ø µ¿Àû¹è¿­ °ª È®ÀÎ
 	void printStudentInfo(string** info, int student_count)
 	{
@@ -91,7 +128,7 @@ namespace sh_func
 			for (int i = 0; i < student_count; i++)
 			{
 
-				if (info[i][0] == name)
+				if (info[i][NAME] == name)
 				{
 					correct_name = true;
 
@@ -107,7 +144,7 @@ namespace sh_func
 							string new_age;
 							cout << endl << "»õ·Î¿î ³ªÀÌ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
 							cin >> new_age;
-							info[i][1] = new_age;
+							info[i][AGE] = new_age;
 							cout << "³ªÀÌ°¡ º¯°æ µÇ¾ú½À´Ï´Ù !" << endl;
 						}
 
@@ -117,7 +154,7 @@ namespace sh_func
 							string new_birthday;
 							cout << endl << "»õ·Î¿î »ıÀÏÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä : ";
 							cin >> new_birthday;
-							info[i][2] = new_birthday;
+							info[i][BIRTHDAY] = new_birthday;
 							cout << "³ªÀÌ°¡ º¯°æ µÇ¾ú½À´Ï´Ù !" << endl;
 						}
 

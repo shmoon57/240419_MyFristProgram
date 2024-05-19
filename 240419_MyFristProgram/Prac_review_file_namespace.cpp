@@ -10,13 +10,13 @@
 
 // 반복해서 선택가능
 // 함수로 기능 묶어서 main 함수 정리하기 - 완료
-// 입력 검사하기 (문자열, 숫자, 길이, 생년월일 양식)
-// 학생정보 수정
-// 2번째 기능실행 될 때, 5) 항목 추가
+// 입력 검사하기 (문자열, 숫자, 길이, 생년월일 양식) - 완료
+// 학생정보 수정 - 완료
+// 2번째 기능실행 될 때
 // 이름, 나이, 생일, 과목 추가 (column 추가)
 // 과목별 현황 확인
 
-// 실습 namespace 사용하기
+// 실습 namespace 사용하기 - 완료
 // 1. 앞서 만들었던 헤더 파일을 main함수가 있는 파일에서 불러오기
 // 2. 앞서 만들었던 헤더 파일에 있는 내용을 적절한 namespace 이름으로 감싸기
 // 3. main 함수가 있는 파일에서 헤더에 있는 내용을 namespace를 거쳐서 사용하기
@@ -46,7 +46,7 @@ int main()
 		cout << endl;
 
 		// 정상 작동 
-		if (student_count > 0) 
+		if (student_count > 0)
 		{
 			// 2차원 동적 배열 선언
 			string** student_info_arr = new string * [student_count];
@@ -57,13 +57,55 @@ int main()
 			}
 
 			// 2차원 동적 배열 값 할당
-			cout << "이름 , 나이 , 생일(ex 9705) 순서로 입력해주세요 " << endl;
+			cout << "이름, 나이, 생일(ex 9705) 순서로 입력해주세요 " << endl;
 
+			
 			for (int i = 0; i < student_count; i++)
 			{
-				for (int j = 0; j < 3; j++)
+				// 이름 입력
+				while (true)
 				{
-					cin >> student_info_arr[i][j]; // 이름 나이 생일 순서로 입력
+					cout << "학생 " << i + 1 << " 이름  : ";
+					cin >> student_info_arr[i][NAME];
+
+					if (sh_func::isName(student_info_arr[i][NAME]))
+					{
+						break;
+					}
+
+					else
+					{
+						cout << "잘못된 이름 형식입니다. 다시 입력해주세요." << endl;
+					}
+				}
+
+				// 나이 입력
+				while (true)
+				{
+					cout << "학생 " << i + 1 << "의 나이: ";
+					cin >> student_info_arr[i][AGE];
+
+					if (sh_func::isNumber(student_info_arr[i][AGE])) {
+						break;
+					}
+					else {
+						cout << "잘못된 나이 형식입니다. 숫자로 다시 입력해주세요." << endl;
+					}
+				}
+
+				// 생일 입력
+				while (true)
+				{
+					cout << "학생 " << i + 1 << "의 생일(예: 9705): ";
+					cin >> student_info_arr[i][BIRTHDAY];
+
+					if (sh_func::isYYMM(student_info_arr[i][BIRTHDAY]))
+					{
+						break;
+					}
+					else {
+						cout << "잘못된 생일 형식입니다. YYMM 형식으로 다시 입력해주세요." << endl;
+					}
 				}
 			}
 
@@ -91,7 +133,7 @@ int main()
 
 			delete[] student_info_arr;
 			break;
-			
+
 		}
 
 		else // 정상 작동 X
