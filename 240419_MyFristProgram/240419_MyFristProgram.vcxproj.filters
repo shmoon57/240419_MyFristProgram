@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\NewFilter1">
+      <UniqueIdentifier>{ed2526d0-b61e-4a83-aa8a-d27a93d412b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="240419_MyFristProgram.cpp">
@@ -163,6 +166,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Prac_up&amp;down_casting.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Prac_virtual_func.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Prac_static.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

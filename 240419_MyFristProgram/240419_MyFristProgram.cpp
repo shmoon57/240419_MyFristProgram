@@ -1,6 +1,6 @@
 ﻿// 240419_MyFristProgram.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 
- #include <iostream> // #include : Keyword , <iostream> 
+#include <iostream> // #include : Keyword , <iostream> 
 
 // 출력자료형 이름(입력) 
 /*int main() // function(함수) 프로그램 전체에서 1개 존재 , 가장 먼저 실행
