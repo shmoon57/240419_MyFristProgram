@@ -16,7 +16,7 @@ class Snack
 protected:
 	string m_name;
 	string m_factory_name;
-	int m_price;
+	//int m_price;
 
 public:
 	string get_name()
@@ -84,7 +84,8 @@ int main()
 	// -> 100% 사용자가 관리(new , delete)
 	// 
 	// call by reference : 원본 인스턴스에 접근해야 할 경우
-	/*Snack* snackBasket[4];
+	/*
+	Snack* snackBasket[4];
 	snackBasket[0] = &candy1;
 	snackBasket[1] = &candy2;
 	snackBasket[2] = &chocolate1;
@@ -114,3 +115,11 @@ int main()
 	return 0;
 
 }
+
+
+/*
+ vector<Snack*> 사용 이점
+1. 다형성 : Candy와 Chocolate 클래스가 Snack 클래스에서 파생된 클래스이기 때문에, Candy와 Chocolate 객체의 포인터를 vector<Snack*>에 함께 저장 가능, 이를 통해 서로 다른 종류의 간식을 공통된 인터페이스를 통해 다룰 수 있습니다.
+2. 동적 할당 : new 키워드를 사용하여 객체를 동적으로 생성하고, 해당 객체의 포인터를 벡터에 저장 가능 이렇게 하면 객체가 복사되는 대신 포인터로 참조되기 때문에 슬라이싱(slicing) 문제가 발생하지 않습니다.
+3. 유연성 : 실행 중에 간식 객체를 벡터에 추가하고 제거할 수 있어 프로그램이 더 유연해집니다
+*/
