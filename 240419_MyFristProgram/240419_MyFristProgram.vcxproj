@@ -142,7 +142,7 @@
     <ClCompile Include="Prac_static.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Prac_thread_contion.cpp" />
+    <ClCompile Include="Prac_thread_con_var.cpp" />
     <ClCompile Include="Prac_thread_mutex.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
