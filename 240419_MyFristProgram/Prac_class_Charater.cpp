@@ -39,16 +39,16 @@ int main()
 
 		switch (type)
 		{
-		// 게임 종료
+			// 게임 종료
 		case 0:
 			cout << "게임을 종료합니다";
 			loop = false;
 			break;
-		
-		// 닉네임 변경
+
+			// 닉네임 변경
 		case 1:
 			while (true)
-			{	
+			{
 				cout << "어떤 캐릭터의 닉네임을 변경하시겠습니까? : ";
 				cin >> name;
 
@@ -75,8 +75,8 @@ int main()
 				}
 			}
 			break;
-		
-		// 레벨 업 
+
+			// 레벨 업 
 		case 2:
 			while (true)
 			{
@@ -101,12 +101,12 @@ int main()
 			}
 			break;
 
-		// 아이템 획득
+			// 아이템 획득
 		case 3:
 			character.raise_item_num();
 			break;
-		
-		// 아이템 사용
+
+			// 아이템 사용
 		case 4:
 			if (character.get_item_num() == 0)
 			{
@@ -118,14 +118,14 @@ int main()
 				character.use_item();
 				break;
 			}
-		
-		// 스텟 확인
+
+			// 스텟 확인
 		case 5:
 			character.print_state();
 			character2.print_state();
 			break;
 
-		//몬스터 잡기
+			//몬스터 잡기
 		case 6:
 			while (true)
 			{
@@ -149,8 +149,8 @@ int main()
 				}
 			}
 			break;
-		
-		// 맞다이
+
+			// 맞다이
 		case 7:
 			cout << " ---- 맞다이 시작 ! ----" << endl;
 			while (true)
@@ -163,7 +163,7 @@ int main()
 					break;
 				}
 
-				else if(character2.get_hp() <= 0)
+				else if (character2.get_hp() <= 0)
 				{
 					cout << character2.get_name() << " 패배하였습니다 " << endl;
 					break;
@@ -172,10 +172,10 @@ int main()
 			cout << "게임을 종료합니다 !" << endl;
 			loop = false;
 			break;
-			
+
 		}
 	}
-
+}
 // 빚나갈때 , 크리티컬 데미지 추가해보기
 // 파일 입출력 과정 적용해보기
   

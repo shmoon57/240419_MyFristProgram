@@ -11,6 +11,6 @@ public:
 private:
 	string ID;
 	string address;
-	string 
+	
 };
 
