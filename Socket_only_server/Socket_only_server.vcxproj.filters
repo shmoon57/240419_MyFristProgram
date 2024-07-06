@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Socket_server.cpp">
+    <ClCompile Include="Prac_socket_chat+DB.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Prac_socket_chat.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Prac_PJT2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
