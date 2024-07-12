@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "240419_MyFristProgram", "24
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DB_Practice", "DB_Practice\DB_Practice.vcxproj", "{E2178A1C-744E-4223-97D7-A245D7AF89DE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Socket_only_server", "Socket_only_server\Socket_only_server.vcxproj", "{DF2C5537-56E9-48B8-8170-38F7BA2B075B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Socket_only_server\Socket_only_server.vcxproj", "{DF2C5537-56E9-48B8-8170-38F7BA2B075B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
